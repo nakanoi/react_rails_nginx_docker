@@ -5,4 +5,4 @@ COPY run.sh /
 RUN mkdir /code
 WORKDIR /code
 EXPOSE 8000
-CMD ["yarn", "start"]
+CMD ["PORT=8000", "yarn", "start"]
